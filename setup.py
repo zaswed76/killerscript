@@ -1,14 +1,14 @@
 from os.path import join, dirname
 
-import clube_stat
+import scr
 from setuptools import setup, find_packages
 
 setup(
         name="clube_stat",
         # в __init__ пакета
-        version=clube_stat.__version__,
+        version=scr.__version__,
         packages=find_packages(
-                exclude=["*.exemple", "*.exemple.*", "exemple.*",
+                exclude=["*.log", "*.exemple.*", "exemple.*",
                          "exemple"]),
         include_package_data=True,
         long_description=open(
